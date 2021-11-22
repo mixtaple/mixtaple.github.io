@@ -23,7 +23,6 @@ a{
     margin-right: 11px;
 }
 
-
 .title{
     margin-top: 80px;
     font-family: 'Fahkwang';
@@ -140,7 +139,6 @@ a{
 .menu__lot a{
     font-size: 20px;
     line-height: 135%;
-    font-weight: 400;
 }
 .menu a:hover{
     color: #FFA102;
@@ -205,6 +203,7 @@ a{
 
 @media (max-width: 1200px){
     .container{
+        padding: 50px 0 76px 30px;
         width: 768px;
     }
     .logo{
@@ -213,13 +212,19 @@ a{
         align-items: center;
         justify-content: center;
     }
+    .logo img{
+        width: 34px;
+        height: 33px;
+    }
     .title{
+        margin-top: 48px;
         font-size: 48px;
     }
     .subtitle{
         font-size: 20px;
     }
     .discount{
+        margin-top: 50px;
         font-size: 24px;
     }
     .discount img{
@@ -238,9 +243,17 @@ a{
     .menu__head{
         font-size: 23px;
     }
+    .menu__subtitle a{
+        font-size: 20px;
+    }
     .menu__cost{
         margin-left: 0;
+        font-size: 18px;
     }
+    .menu__price{
+        font-size: 20px;
+    }
+
     .social__pic{
         width: 159px;
         height: 192px;
@@ -271,5 +284,112 @@ a{
     }
     .footer__link a{
         font-size: 19px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .container{
+        padding: 30px 0 60px 0px;
+        width: 360px;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .logo img{
+        width: 21px;
+        height: 20px;
+    }
+    .title{
+        margin-top: 35px;
+        font-size: 27px;
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+    .discount{        
+        display: inline-block;
+        margin: 55px 0 0 60px;
+        font-size: 18px;
+        max-width: 264px;
+    }
+    .discount img{
+        width: 143px;
+        height: 41px;
+    }
+    .menu{
+        margin-top: 50px;
+        max-height: fit-content;
+        align-items: center;
+    }
+    .menu__item{
+        width: 335px;
+        padding-top: 50px;
+    }
+    .menu__head{
+        font-size: 20px;
+    }
+    .menu__cost{
+        font-size: 17px;
+    }
+    .menu__price{
+        font-size: 20px;
+        min-width: 100px;
+    }
+    .menu__subtitle{
+        font-size: 20px;
+    }
+
+    .menu__subtitle a{
+        font-size: 19px;
+    }
+    .menu__item:last-child{
+        padding-top: 50px;
+    }
+
+    .social__pic{
+    display: none;
+    }
+    .social__links a{
+        font-size: 18px;
+    }
+    .social__links span{
+        margin-left: 5px;
+    }
+    .social__links{
+        margin-left: 0;
+        font-size: 18px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .social__links img{
+        margin-right: 16px;
+    }
+    .social__links a img:first-child{
+        width: 22px;
+        height: 22px;
+    }
+    .social__links a img:last-child{
+        width: 25px;
+        height: 19px;
+    }
+    .social{
+        justify-content: center;
+        margin: 55px 0 0;
+    }
+    .footer{
+        height: 47px;
+    }
+    .footer__link{
+        width: 330px;
+        padding-top: 17px;
+    }
+    .footer__link img{
+        display: none;
+    }
+    .footer__link a{
+        font-size: 11px;
     }
 }
