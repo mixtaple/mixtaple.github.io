@@ -101,11 +101,14 @@ a{
     line-height: 135%;
 }
 .menu a{
-    font-weight: 500;
+
     font-size: 20px;
     line-height: 135%;
     text-decoration-line: underline;
     color: #000000;
+}
+.bold{
+    font-weight: 500;
 }
 .menu__cost{
     margin-bottom: 16px;
@@ -340,9 +343,7 @@ a{
         font-size: 20px;
     }
 
-    .menu__subtitle a{
-        font-size: 19px;
-    }
+
     .menu__item:last-child{
         padding-top: 50px;
     }
