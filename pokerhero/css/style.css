@@ -60,6 +60,10 @@ a{
     line-height: 135%;
     color: #000000;
 }
+.discount span{
+    font-family: 'Fahkwang';
+    margin-left: 7px;
+}
 .discount img{
     margin: 0 14px;
 }
@@ -165,13 +169,15 @@ a{
 }
 .social__links a{
     margin-top: 7px;
-    display: block;
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 36px;
     line-height: 140%;
     color: #263238;
 }
 .social__links span{
+    margin-left: 7px;
     color: #FFA305;
 }
 .social__links img{
@@ -192,7 +198,8 @@ a{
     align-items: center;
 }
 .footer__link a{
-    display: block;
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 26.3147px;
     line-height: 135%;
@@ -200,6 +207,8 @@ a{
 }
 
 .footer__link img{
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 
@@ -311,7 +320,7 @@ a{
         font-size: 15px;
     }
     .discount{        
-        display: inline-block;
+        flex-wrap: wrap;
         margin: 55px 0 0 60px;
         font-size: 18px;
         max-width: 264px;
