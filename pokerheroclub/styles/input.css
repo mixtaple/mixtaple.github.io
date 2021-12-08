@@ -12,6 +12,14 @@ body{
     background-position: top right -120px;
 }
 
+input{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 a{
     text-decoration: none;
 }
@@ -248,7 +256,6 @@ form::after{
     margin-bottom: 19px;
 }
 
-
 .form__input{
     padding: 0 22px 0;
     width: 788px;
@@ -270,12 +277,7 @@ form::after{
 }
 
 .form input[type=submit]{
-    border:none;
-    background-image:none;
-    background-color:transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+
     margin-top: 0;
     position: absolute;
     font-family: 'Rubik';
