@@ -8,7 +8,7 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Rubik';
     src: local('../fonts/Rubik-Bold'),
         url('../fonts/Rubik-Bold.ttf') format('truetype');
@@ -22,7 +22,7 @@
         url('../fonts/Rubik-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-}
+} */
 
 
 
