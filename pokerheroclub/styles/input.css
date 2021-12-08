@@ -282,6 +282,7 @@ form::after{
     background-color:transparent;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
+    -webkit-appearance: none;
     box-shadow: none;
     margin-top: 0;
     position: absolute;
