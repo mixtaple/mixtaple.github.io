@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airdrop</title>
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../styles/input.css">
+</head>
+<body>
+    
+<div class="container">
+        <div class="prizes">
+            <div class="title">
+                <div class="title__text">Розыгрыш призов от PokerHero<br> на <span>10 000$</span></div> 
+                <div class="title__description">Подведем итоги 30-го декабря</div>
+            </div>
+            <div class="prizes__img">        <img src="../img/prize.svg" alt="prize"></div>
+        </div>
+    <div class="subtitle">Для участия</div>
+    <div class="wrapper">
+        <div class="links">
+            <div class="links__item">
+                <div class="links__description">Подпишись на нас в discord
+                    </div>
+                <a target="_blank" href="https://discord.gg/YefBs5UA"><button class="links__button">Подписаться<img src="../icons/discord.svg" alt=""> 
+                </button></a> 
+            </div>
+            <div class="links__item">
+                <div class="links__description">А также в telegram</div>
+                <a target="_blank" href="https://t.me/pokerheroclub"><button class="links__button">Подписаться<img src="../icons/telegram.svg" alt=""> </button></a>
+            </div>
+            <div class="links__item">
+                <div class="links__description">И не забудь про twitter</div>
+                <a target="_blank" href="https://twitter.com/pokerheroclub"><button class="links__button">Подписаться<img src="../icons/twitter.svg" alt=""> </button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="form">
+        <form id="airdropForm" onsubmit="return validateAirdropForm()" method="post">
+            <p>Укажи свой ник на Gipsyteam</p>
+            <input class="form__input" type="text" name="gipsyteam_id" placeholder="Name">
+            <div class="alert"><span class="hidden">Обязательное поле</span></div>
+            <p>Discord</p>
+            <input class="form__input"  type="text" name="discord_id" placeholder="Plastilin#4969">
+            <div class="alert"><span class="hidden">Обязательное поле</span></div>
+            <p>Telegram</p>
+            <input class="form__input" type="text" name="telegram_id" placeholder="@Roodenok">
+            <div class="alert"><span class="hidden">Обязательное поле</span></div>
+            <p>Twitter</p>
+            <input class="form__input"  type="text" name="twitter_id" placeholder="@Roodenok">
+            <div class="alert"><span class="hidden">Обязательное поле</span></div>
+            <p>Кошелек в сети Polygon Mainnet</p>
+            <div class="wallet">
+                <input class="form__input"  type="text" name="wallet_id" placeholder="0xa7A2d9F29cF1C72F76d2cd98AE1af05b8A128d87"><br>
+                <a target="_blank" href="https://vc.ru/u/903848-egor-polyanskiy/289096-kak-nastroit-i-ispolzovat-koshelek-metamask-poshagovaya-instrukciya">Как создать кошелек?</a>
+            </div>
+            <div class="alert"><span class="hidden">Необходимо ввести адрес</span></div>
+            <input class="form__input" type="submit" value="Присоединиться к розыгрышу">
+            <span class="pink"></span>
+            <span class="orange"></span>
+        </form>
+    </div>
+    <img class="triangles" src="../img/triangles.svg" alt="triangles">
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="../scripts/airdrop.js"></script>
+</body>
+</html>
