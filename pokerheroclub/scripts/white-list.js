@@ -1,3 +1,16 @@
+// document.querySelectorAll('.expand').forEach((i)=>{
+//     i.addEventListener('click', ()=>{
+//         i.classList.toggle('rotated');
+//         i.parentElement.nextElementSibling.classList.toggle('hidden');
+//     })
+// });
+
+document.querySelectorAll('.faq__title').forEach((i)=>{
+    i.addEventListener('click', ()=>{
+        i.classList.toggle('rotated');
+        i.nextElementSibling.classList.toggle('hidden');
+    })
+});
 
 // function validateWhiteListForm() {
 //     let wallet = document.forms["whiteListForm"]["wallet_id"].value;
