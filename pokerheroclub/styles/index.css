@@ -191,6 +191,7 @@ button::after{
 
 .heroes{
     padding-top: 120px;
+    padding-bottom: 180px;
 }
 .heroes__wrapper{
     display: flex;
@@ -207,4 +208,84 @@ button::after{
 
     position: absolute;
     bottom: -60px;
+}
+
+.heroes__title{
+    margin-top: 100px;
+    font-family: 'Gloria Hallelujah';
+    font-size: 55px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+.heroes__title span{
+    font-family: 'Gloria Hallelujah';
+    margin-right: 50px;
+    font-size: 144px;
+    line-height: 73px;
+    color: #FFDB89;
+}
+.heroes__img{
+    margin-top: 46px;
+}
+
+.roadmap{
+    padding: 80px 0 226px;
+}
+.roadmap__wrapper{
+    height: 1835px;
+    position: relative;
+    background: no-repeat url('../img/index/bubble.svg') center center/cover;
+}
+.roadmap__item:first-child{
+    padding-top: 150px;
+}
+.roadmap__item{
+
+    margin-left: 286px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+.roadmap__chest{
+    margin-right: 66px;
+}
+
+.roadmap__text{
+    font-size: 30px;
+    line-height: 45px;
+    width: 850px;
+}
+
+.roadmap__hero{
+    position: absolute;
+    right: -70px;
+    bottom: -60px;
+}
+
+.team__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+.team__wrapper:nth-child(2){
+    justify-content: center;
+}
+.team__item{
+    display: flex;
+    flex-direction: column;
+    width: 323px;
+    margin-left: 128px;
+}
+.team__item:first-child{
+    margin-left: 0;
+}
+.team__descr{
+    font-family: Gloria Hallelujah;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 28px;
 }
