@@ -168,7 +168,7 @@ button::after{
 .divider__img{
     position: absolute;
     right: 125px;
-    top: -60px;
+    top: -70px;
 }
 .divider__inner .container{
     display: flex;
@@ -210,8 +210,11 @@ button::after{
     flex-direction: column;
     position: relative;
 }
+.heroes__item:nth-child(3) .br{
+    position: absolute;
+    bottom: -60px;
+}
 .heroes__item:last-child .br{
-
     position: absolute;
     bottom: -60px;
 }
@@ -269,6 +272,7 @@ button::after{
 }
 
 .team__wrapper{
+    margin-top: 120px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -393,11 +397,10 @@ button::after{
     align-items: center;
 }
 .footer__social .social__item{
-    z-index: 1;
+    /* z-index: 1; */
 }
 .footer__social .social__item::after{
-    overflow: hidden;
-    background-color: #000;
+    display: none;
 }
 
 .footer__social-outter{
