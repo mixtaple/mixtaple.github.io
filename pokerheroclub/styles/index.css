@@ -795,6 +795,9 @@ button::after{
         justify-content: start;
         margin-bottom: 10px;
     }
+    .worldsFirst__wrapper:nth-child(1),.worldsFirst__wrapper:nth-child(3){
+        flex-direction: column-reverse;
+    }
     .worldsFirst__item{
         width: 100%;
         text-align: center;
