@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Regular.eot');
+    src: local('../fonts/Graphik LCG Regular'), local('../fonts/GraphikLCG-Regular'),
+        url('../fonts/GraphikLCG-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GraphikLCG-Regular.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Regular.woff') format('woff'),
+        url('../fonts/GraphikLCG-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Medium.eot');
+    src: local('../fonts/Graphik LCG Medium'), local('../fonts/GraphikLCG-Medium'),
+        url('../fonts/GraphikLCG-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GraphikLCG-Medium.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Medium.woff') format('woff'),
+        url('../fonts/GraphikLCG-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Semibold.eot');
+    src: local('../fonts/Graphik LCG Semibold'), local('../fonts/GraphikLCG-Semibold'),
+        url('../fonts/GraphikLCG-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GraphikLCG-Semibold.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Semibold.woff') format('woff'),
+        url('../fonts/GraphikLCG-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Bold.eot');
+    src: local('../fonts/Graphik LCG Bold'), local('../fonts/GraphikLCG-Bold'),
+        url('../fonts/GraphikLCG-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GraphikLCG-Bold.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Bold.woff') format('woff'),
+        url('../fonts/GraphikLCG-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Fahkwang';
+    src: local('../fonts/Fahkwang Medium'), local('../fonts/Fahkwang-Medium'), url('../fonts/Fahkwangmedium.woff2') format('woff2'), url('../fonts/Fahkwangmedium.woff') format('woff'), url('../fonts/Fahkwangmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fahkwang';
+    src: local('../fonts/Fahkwang Bold'), local('../fonts/Fahkwang-Bold'), url('../fonts/Fahkwangbold.woff2') format('woff2'), url('../fonts/Fahkwangbold.woff') format('woff'), url('../fonts/Fahkwangbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
