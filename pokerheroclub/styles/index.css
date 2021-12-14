@@ -477,15 +477,18 @@ button::after{
 }
 
 .footer{
-
-    margin-top: 330px;
+    height: 500px;
+    margin-top: 230px;
+    padding-top: 100px;
     position: relative;
     padding-bottom: 93px;
+    overflow: hidden;
 }
 .footer__wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     gap: 100px;
 }
 .join_us{
@@ -509,6 +512,10 @@ button::after{
 .social__outter{
     border: 5px solid #fff;
     padding: 20px;
+    position: relative;
+    border-bottom: none;
+    border-right: none;
+    background-color: #000;
 }
 .footer__social .social__item::after{
     z-index: -1;
@@ -520,17 +527,9 @@ button::after{
     position: absolute;
     display: block;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
 }
-.ellipse2{
-    position: absolute;
-    display: block;
-    bottom: 0;
-    right: 0px;
-    width: 600px;
-    z-index: -1;
-    overflow: hidden;
-}
+
 .footer__img{
     width: 100%;
     position: absolute;
@@ -547,6 +546,27 @@ button::after{
 
 }
 .outter img{
+    overflow: hidden;
+}
+.square{
+    display: block;
+    width: 700px;
+    height: 678px;
+    bottom: -482px;
+    right: -221px;
+    border: 5px solid #fff;
+    z-index: -1;
+    position: absolute;
+    border-left: none;
+    transform: rotate(61.5deg);
+    background-color: #000;
+    border-radius: 7px;
+    
+}
+.square__wrapper{
+    display: block;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
 }
 
@@ -659,6 +679,12 @@ button::after{
     .footer__social{
         /* width: 567px; */
         height: 202px;
+    }
+    .square{
+        height: 644px;
+        bottom: -519px;
+        right: -188px;
+        transform: rotate(67.5deg);
     }
 }
 
@@ -775,7 +801,19 @@ button::after{
     }
     .footer{
         margin-top: 100px;
+        background: url('../img/index/ellipse2.svg')  center center/cover no-repeat;
+        z-index: -1;
     }
+    .square{
+        height: 601px;
+        bottom: -493px;
+        right: -221px;
+        transform: rotate(66deg);
+    }
+    .ellipse{
+        display: none;
+    }
+
 }
 
 @media (max-width: 1020px){
@@ -1044,8 +1082,19 @@ button::after{
     .footer__social img{
         width: 70%;
     }
+    .footer{
+        margin-top: 0px;
+        background: none;
+        height: 450px;
+    }
     .social__outter{
         padding: 10px;
-
     }
+    .square{
+        height: 373px;
+        bottom: -442px;
+        right: -303px;
+        transform: rotate(69deg);
+    }
+
 }

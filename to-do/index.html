@@ -5,9 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/Logo.svg" alt="logo">
+        </div>
+        <div class="title">Tasks</div>
+    </div>
+    <div class="nav">
+        <button><img src="img/Tasks.svg" alt="tasks"></button>
+    </div>
+
+
+    <div class="container">
+        <section class="add">
+            <input type="text" class="add__input" placeholder="+ Add a task, press Enter to save">
+            <button class="add__button">Add</button>
+        </section>
     
+        <section class="to-do">
+            <div class="to-do__title">To do (3)</div>
+            <div class="to-do__item">
+                <label>
+                    <input type="checkbox">
+                    <div class="to-do__descr">
+                        Add Icon to Dashboard
+                    </div>
+                </label>
+            </div>
+            <div class="to-do__item">
+                <label>
+                    <input type="checkbox">
+                    <div class="to-do__descr">
+                        Create To-Do List 
+                    </div>
+                </label>
+            </div>
+            <div class="to-do__item">
+                <label>
+                    <input type="checkbox">
+                    <div class="to-do__descr">
+                        Add Icon to Dashboard
+                    </div>
+                </label>
+            </div>
+
+        </section>
+        <section class="completed">
+            <div class="completed__title">Complited (3)</div>
+            <div class="completed__item">
+                <label>
+                    <input type="checkbox">
+                    <div class="completed__descr">
+                        Add Icon to Dashboard
+                    </div>
+                </label>
+            </div>
+            <div class="completed__item">
+                <label>
+                    <input type="checkbox">
+                    <div class="to-do__descr">
+                        Create To-Do List 
+                    </div>
+                </label>
+            </div>
+            <div class="completed__item">
+                <label>
+                    <input type="checkbox">
+                    <div class="completed__descr">
+                        Add Icon to Dashboard
+                    </div>
+                </label>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
