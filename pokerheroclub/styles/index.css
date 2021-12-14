@@ -27,16 +27,15 @@ a{
     width: 100%;
 }
 .header__menu{
-    margin-top: 15px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 .header__menu li{
     list-style-type: none;
 }
 .hamburger{
-    z-index: 2;
-    position: absolute;
+    z-index: 6;
+
     display: none;
     flex-wrap: wrap;
     left: 0;
@@ -54,9 +53,12 @@ a{
     background-color: #9b914b;
 }
 
-
+.header{
+    margin-top: 60px;
+}
 .header__menu ul{
     display: flex;
+    align-items: flex-start;
     /* margin-left: 300px; */
 }
 
@@ -202,6 +204,7 @@ button::after{
     background: #DCDCDC;
 }
 .divider__text{
+    padding-top: 10px;
     font-family: 'Bangers';
     font-size: 85px;
     line-height: 90px;
@@ -212,13 +215,12 @@ button::after{
     right: 125px;
     top: -50px;
 }
-.divider__img img{
-    /* width: 15vw; */
-}
+
 .divider__inner .container{
+
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+
 }
 
 
@@ -813,6 +815,48 @@ button::after{
     .ellipse{
         display: none;
     }
+    .header__menu{
+        transition: 1s all;
+        position: fixed;
+        justify-content: center;
+        left: -100%;
+        padding-top: 100px;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 5;
+    }
+    .button__link{
+        z-index: -1;
+    }
+
+    .opened{
+        left: 0; 
+    }
+    .header__menu ul{
+        flex-direction: column;
+    }
+    .header__menu li{
+        margin-bottom: 30px;
+
+    }
+    .header__menu li a{
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+
+    }
+    .wrapper{
+        /* justify-content: center; */
+    }
+    .logo{
+        margin-left: 150px;
+    }
+    .hamburger{
+        display: flex;
+    }
 
 }
 
@@ -1024,7 +1068,12 @@ button::after{
         width: 15px;
     }
 
-
+    .mobile{
+        display: block;
+    }
+    .screen{
+        display: none;
+    }
     .header__menu{
         transition: 1s all;
         position: fixed;
@@ -1045,13 +1094,25 @@ button::after{
         margin-bottom: 30px;
 
     }
+    .header__menu li a{
+        font-size: 20px;
+
+
+    }
     .wrapper img{
-        width: 59px; 
-        height: 51px;
+
         text-align: center;
     }
-    .wrapper{
-        justify-content: center;
+
+    .logo{
+        margin-left: 0;
+        width: 103px;
+    }
+    .header__button{
+        width: 109px;
+    }
+    .header__button:after{
+        width: 112px;
     }
     .hamburger{
         display: flex;
@@ -1066,12 +1127,8 @@ button::after{
     .footer__wrapper img{
         width: 100%;
     }
-    .screen{
-        display: none;
-    }
-    .mobile{
-        display: block;
-    }
+
+
     .join_us{
         width: 180px;
     }
@@ -1096,5 +1153,7 @@ button::after{
         right: -303px;
         transform: rotate(69deg);
     }
-
+    .header{
+        margin-top: 15px;
+    }
 }

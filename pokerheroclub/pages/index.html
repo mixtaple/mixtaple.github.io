@@ -3,14 +3,15 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Poker Hero Club</title>
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../icons/favicon.ico">
 </head>
 <body>
     <div class="header">
@@ -21,16 +22,16 @@
                     <span></span>
                     <span></span>
                 </div>
-                <img src="../icons/index/logo.svg" alt="logo">
+                <img class="logo" src="../icons/index/logo.svg" alt="logo">
                 <div class="header__menu">
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#roadmap">Roadmap</a></li>
                         <li><a href="#team">Team</a></li>
-                        <li><a href="#">PokerHero elements</a></li>
+                        <li><a href="#faq">Faq</a></li>
                     </ul>
                 </div>
-                <a href="" class=""><button class="button header__button hidden">Connect wallet</button></a>
+                <a href="" class="button__link"><button class="button header__button">Mint <img src="../img/arrow.svg" alt=""></button></a>
             </div>
             <img class="header__bg screen" src="../img/index/GIF.gif" alt="">
             <img class="header__bg mobile" src="../img/index/mobile.gif" alt="">
@@ -53,7 +54,7 @@
                     <a href="https://twitter.com/pokerheroclub"><div class="social__item"><img src="../icons/index/social/twitter.svg" alt="twitter"></div></a>
                     <a href="https://t.me/pokerheroclub"><div class="social__item"><img src="../icons/index/social/telegram.svg" alt="telegram"></div></a>
                 </div>
-                <a href="" class="welcome__button"><button class="button welcome__button">Join whitelist</button></a>
+                <a href="" class="welcome__button button__link"><button class="button welcome__button">Join whitelist <img src="../img/arrow.svg" alt=""></button></a>
 
             </div>
         </div>
@@ -246,7 +247,7 @@
             </div>
         </div>
     </section>
-    <div class="divider">
+    <div class="divider" id="faq">
         <div class="divider__inner">
             <div class="container">
                 <div class="divider__text">faq</div>
