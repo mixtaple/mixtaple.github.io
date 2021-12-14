@@ -312,7 +312,7 @@ button::after{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
     background: no-repeat url('../img/index/bubble.svg') center center/cover;
     background-size: 100%;
@@ -324,6 +324,7 @@ button::after{
     display: flex;
     justify-content: space-between;
     gap: 55px;
+    align-items: center;
 
 }
 
@@ -333,6 +334,28 @@ button::after{
     width: 700px;
 }
 
+.roadmap__chest{
+    position: relative;
+}
+.percent{
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+
+}
+
+.roadmap__chest img{
+    width: 190px;
+}
+.percent img{
+    width: 100px;
+}
+.percent-wide img{
+    width: 120px;
+}
+.percent.percent-wide{
+    right: -50px;
+}
 .roadmap__hero{
 
     width: 20vw;
@@ -602,7 +625,7 @@ button::after{
     }
     .roadmap__wrapper{
         padding-top: 200px;
-        gap: 10px;
+
         background: no-repeat url('../img/index/bubble-1200.svg') center center/cover;
         background-size: 100%;
     }
@@ -611,11 +634,19 @@ button::after{
         line-height: 45px;
         width: 550px;
     }
-    .roadmap__chest img{
-        width: 210px;
-        height: 200px;
-    }
 
+    .roadmap__chest img{
+        width: 190px;
+    }
+    .percent img{
+        width: 80px;
+    }
+    .percent-wide img{
+        width: 97px;
+    }
+    .percent.percent-wide{
+        right: -47px;
+    }
     .team__wrapper{
         gap: 60px;
     }
@@ -687,7 +718,7 @@ button::after{
 
     .roadmap__wrapper{
         height: 1400px;
-        padding-top: 120px;
+        padding-top: 80px;
         background: no-repeat url('../img/index/bubble-1000.svg') center center/cover;
     }
     .roadmap__text{
@@ -696,8 +727,21 @@ button::after{
     }
     .roadmap__chest img{
         width: 166px;
-        height: 160px;
         margin-right: 10px;
+    }
+    .percent{
+        bottom: -30px;
+        right: -20px;
+    }
+    
+    .percent img{
+        width: 80px;
+    }
+    .percent-wide img{
+        width: 97px;
+    }
+    .percent.percent-wide{
+        right: -38px;
     }
     .team__wrapper{
         gap: 25px;
@@ -876,6 +920,19 @@ button::after{
     .roadmap__chest img{
         width: 50px;
         height: 50px;
+    }
+    .percent{
+        bottom: -20px;
+        right: -10px;
+    }
+    .percent img{
+        width: 27px;
+    }
+    .percent-wide img{
+        width: 33px;
+    }
+    .percent.percent-wide{
+        right: -17px;
     }
     .roadmap__item{
         width: 75%;
