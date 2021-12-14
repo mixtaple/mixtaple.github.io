@@ -150,12 +150,18 @@ button::after{
     width: 91.34px;
     height: 91.34px;
     border: 1.89842px solid #FFFFFF;
-    border-radius: 11.3905px;   
+    border-radius: 11.3905px;
+    display: flex;
     text-align: center;
-    padding-top: 17px;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 17px; */
     background: #000000;
-
 }
+.social__item img{
+    width: 75%;
+}
+
 .social__item::after{
     content: "";
     position: absolute;
@@ -547,7 +553,6 @@ button::after{
     .social__item{
         width: 82px;
         height: 82px;
-        padding-top: 12px;
     }
     .social__item::after{
         width: 82px;
@@ -641,7 +646,6 @@ button::after{
     .social__item{
         width: 67px;
         height: 67px;
-        padding-top: 8px;
     }
     .social__item::after{
         width: 67px;
@@ -764,7 +768,6 @@ button::after{
         margin-right: 20px;
         width: 41px;
         height: 41px;
-        padding-top: 4px;
         border-radius: 5.06235px;
         }
     .social__item::after{
