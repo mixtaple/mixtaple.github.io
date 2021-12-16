@@ -395,7 +395,7 @@ button::after{
 .team__descr{
     font-family: Gloria Hallelujah;
     font-size: 24px;
-    line-height: 33px;
+    line-height: 30px;
     letter-spacing: 0.08em;
     color: #FFFFFF;
     text-align: center;
@@ -406,7 +406,6 @@ button::after{
 .faq__wrapper{
     margin-top: 154px;
     transition: 1s all;
-    
 }
 
 .faq__title{
@@ -420,22 +419,53 @@ button::after{
 }
 .faq__text{
     margin-left: 22px;
-    padding: 45px 88px;
+    padding: 95px 60px;
     background: url('../img/index/answer.svg')  no-repeat center center/cover ;
-    width: 100%;
-    height: fit-content;
+    width: 1000px;
     background-size: 100%;
     /* height: 153px; */
 }
-.faq__text_wide{
-    background-size: cover;
+
+.faq__text_1{
+    background: url('../img/index/answers/answer1.svg')  no-repeat center center/cover ;
+    background-size: 100%;
+    height: fit-content;
+}
+.faq__text_2{
+    background: url('../img/index/answers/answer2.svg')  no-repeat center center/cover ;
+    background-size: 100%;
+    height: fit-content;
+}
+.faq__text_3{
+    background: url('../img/index/answers/answer3.svg')  no-repeat center center/cover ;
+    background-size: 100%;
+    height: fit-content;
+}
+.faq__text_4{
+    background: url('../img/index/answers/answer4.svg')  no-repeat center center/cover ;
+    background-size: 100%;
+    height: fit-content;
+}
+.faq__text_5{
+    background: url('../img/index/answers/answer5.svg')  no-repeat center center/cover ;
+    background-size: 100%;
+    height: fit-content;
+}
+.faq__text_6{
+    background: url('../img/index/answers/answer6.svg')  no-repeat center center/cover ;
+    background-size: 100%;
+    height: fit-content;
+}
+.faq__text_7{
+    background: url('../img/index/answers/answer7.svg')  no-repeat center center/cover ;
+    background-size: 100%;
+    height: fit-content;
 }
 .faq__descr a{
     font-weight: 500;
     color: #000;
 }
 .faq__line{
-
     display: block;
     width: 100%;
     height: 3px;
@@ -444,7 +474,7 @@ button::after{
 
 .faq__descr{
     display: flex;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 36px;
     color: #000000;    
     margin-bottom: 26px;
@@ -488,8 +518,8 @@ button::after{
 }
 
 .footer{
-    height: 500px;
-    margin-top: 230px;
+    height: 510px;
+    margin-top: 130px;
     padding-top: 100px;
     position: relative;
     padding-bottom: 93px;
@@ -498,14 +528,14 @@ button::after{
 .footer__wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: flex-start;
     gap: 100px;
 }
 .join_us{
     width: 550px;
 }
 .footer__social {
+
     /* width: 100%; */
     height: 279px;
     width: 547px;
@@ -521,6 +551,7 @@ button::after{
     margin-right: 0;
 }
 .social__outter{
+
     border: 5px solid #fff;
     padding: 20px;
     position: relative;
@@ -697,6 +728,8 @@ button::after{
         right: -188px;
         transform: rotate(67.5deg);
     }
+
+
 }
 
 @media (max-width: 1290px){
@@ -801,7 +834,7 @@ button::after{
     }
     .faq__descr{
         font-size: 25px;
-        line-height: 36px;
+        line-height: 30px;
     }
     .join_us{
         width: 400px;
@@ -865,6 +898,41 @@ button::after{
     }
     .hamburger{
         display: flex;
+    }
+    .faq__text_1{
+        background: url('../img/index/answers/answer1-1.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_2{
+        background: url('../img/index/answers/answer2-1.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_3{
+        background: url('../img/index/answers/answer3-1.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_4{
+        background: url('../img/index/answers/answer4-1.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_5{
+        background: url('../img/index/answers/answer5-1.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_6{
+        background: url('../img/index/answers/answer6-1.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_7{
+        background: url('../img/index/answers/answer7-1.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
     }
 
 }
@@ -1054,7 +1122,7 @@ button::after{
     }
     .faq__descr{
         font-size: 12px;
-        line-height: 14px;
+        line-height: 13px;
         align-items: center;
     }
     .faq__descr img{
@@ -1164,5 +1232,40 @@ button::after{
     }
     .header{
         margin-top: 15px;
+    }
+    .faq__text_1{
+        background: url('../img/index/answers/answer1-2.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_2{
+        background: url('../img/index/answers/answer2-2.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_3{
+        background: url('../img/index/answers/answer3-2.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_4{
+        background: url('../img/index/answers/answer4-2.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_5{
+        background: url('../img/index/answers/answer5-2.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_6{
+        background: url('../img/index/answers/answer6-2.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
+    }
+    .faq__text_7{
+        background: url('../img/index/answers/answer7-2.svg')  no-repeat center center/cover ;
+        background-size: 100%;
+        height: fit-content;
     }
 }
