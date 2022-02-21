@@ -212,7 +212,7 @@ button::after{
 }
 .heroes__item:nth-child(3) .br{
     position: absolute;
-    bottom: -60px;
+    bottom: -100px;
 }
 .heroes__item:last-child .br{
     position: absolute;
