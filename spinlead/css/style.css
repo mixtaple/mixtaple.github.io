@@ -29,6 +29,7 @@ button:hover{
     /* width: 100%; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu__logo{
@@ -240,14 +241,21 @@ button:hover{
 .community__users{
     width: 230px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-
     font-weight: 600;
     font-size: 31px;
     line-height: 116.5%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #7289DA;
+}
+.community__users .ds{
+    font-size: 31px;
+    line-height: 116.5%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
 }
 .community__users span{
     font-size: 90px;
@@ -267,8 +275,10 @@ button:hover{
 }
 .footer__wrapper{
     padding-top: 68px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 100px;
 }
 .footer__column_title{
@@ -280,6 +290,7 @@ button:hover{
 }
 .footer__link{
     margin-bottom: 13px;
+
 }
 .footer__link a{
     display: flex;
@@ -293,6 +304,10 @@ button:hover{
 .footer__link a.light{
     font-weight: normal;
 }
+.link__img{
+    display: flex;
+    align-items: center;
+}
 
 .footer__link a span{
     display: block;
@@ -300,7 +315,7 @@ button:hover{
     left: 30px;
 
 }
-.ds{
+.ds .hidden{
     display: none;
 }
 @media (max-width: 1440px){
@@ -315,12 +330,8 @@ button:hover{
         height: auto;
     }
     .footer__wrapper{
-        width: 80%;
-        margin: 0 auto;
-        flex-wrap: wrap;
         padding-bottom: 50px;
-        gap: 0;
-        row-gap: 20px;
+        gap: 30px;
     }
 
     .main__img{
@@ -338,6 +349,7 @@ button:hover{
         width: 90%;
         font-size: 55px;
     }
+
 }
 @media (max-width: 960px){
     .container{
@@ -391,8 +403,8 @@ button:hover{
     
     .footer__wrapper{
         padding-top: 25px;
-        width: 90%;
-
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
     }
     .footer__column_title{
         font-size: 18px;
@@ -482,7 +494,7 @@ button:hover{
         font-size: 14px;
         line-height: 116%;
         align-items: center;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
         column-gap: 15px;
 
     }
@@ -502,7 +514,7 @@ button:hover{
         text-align: center;
     }
     .footer__wrapper{
-        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
 
     }
     .footer__column_title{
@@ -612,10 +624,16 @@ button:hover{
         font-size: 13px;
         line-height: 140%;
     }
+    .community__users .ds{
+        font-size: 13px;
+    }
     button.button__link{
         width: 185px;
         font-size: 16px;
         line-height: 128%;
+    }
+    .ds.hidden{
+        display: block;
     }
     .community{
         height: 600px;
