@@ -107,7 +107,7 @@ button:hover{
     top: 42px;
     padding-top: 30px;
     text-align: center;
-    background-image: url("/img/cloud.svg");
+    background-image: url("./img/cloud.svg");
 }
 
 .header__side__man{
@@ -133,7 +133,6 @@ button:hover{
 }
 
 .towho {
-    /* background-image: url("/img/towho-bg.svg"); */
     background-repeat: no-repeat;
     width: 100%;
     height: 940px;
@@ -150,7 +149,7 @@ button:hover{
 .towho__text{
     width: 313px;
     height: 300px;
-    background-image: url('/img/Ellipse.svg');
+    background-image: url('./img/Ellipse.svg');
     position: relative;
     font-family: 'Roboto', sans-serif;
     line-height: 150%;
@@ -222,10 +221,10 @@ button:hover{
     font-size: 24px;
 }
 .about__cross__elem:first-child{
-    background-image: url("/img/cross-bg1.svg");
+    background-image: url("./img/cross-bg1.svg");
 }
 .about__cross__elem:last-child{
-    background-image: url("/img/cross-bg2.svg");
+    background-image: url("./img/cross-bg2.svg");
 }
 
 .coaches{
@@ -241,7 +240,7 @@ button:hover{
     text-align: center;
     left: 320px;
     top:-50px;
-    background-image: url("/img/coaches-bg.svg");
+    background-image: url("./img/coaches-bg.svg");
     background-repeat: no-repeat;
     width: 375px;
     height: 120px;
@@ -312,7 +311,7 @@ button:hover{
     display: block;
     height: 570px;
     margin-top: 150px;
-    background-image: url("/img/bg/plan.svg");
+    background-image: url("./img/bg/plan.svg");
     padding: 60px 40px;
 }
 .learn__bg__mobile{
@@ -417,7 +416,7 @@ ol li::before {
     width: 367px;
     height: 245px;
     padding: 20px 40px;
-    background-image: url("/img/bg/card.png");
+    background-image: url("./img/bg/card.png");
 }
 .review__elem span{
     font-weight: 600;
@@ -439,21 +438,21 @@ ol li::before {
 .prev{
     width: 50px;
     height: 50px;
-    background-image: url("/img/buttons/prev.svg");
+    background-image: url("./img/buttons/prev.svg");
     border:none;
     background-color: #fff;
 }
 .next{
     width: 50px;
     height: 50px;
-    background-image: url("/img/buttons/prev.svg");
+    background-image: url("./img/buttons/prev.svg");
     border:none;
     background-color: #fff;
 }
 
 .rocket{
     padding-top: 150px;
-    background-image: url("/img/bg/rocket.svg");
+    background-image: url("./img/bg/rocket.svg");
     background-position: 0 50px;
     background-repeat: no-repeat;
     height: 590px;
@@ -607,7 +606,7 @@ ol li::before {
     .towho__text{
         width: 160px;
         height: 160px;
-        background-image: url('/img/ellipse-small.png');
+        background-image: url('./img/ellipse-small.png');
         background-size: 163px; z-index: 3;
         font-size: 13px;
         line-height: 130%;
@@ -731,7 +730,7 @@ ol li::before {
         width: 250px;
         height: 213px;
         line-height: 150%;
-        background-image: url("/img/bg/card-mobile.png");
+        background-image: url("./img/bg/card-mobile.png");
         background-repeat: no-repeat;
         padding: 20px 25px;
 
@@ -756,7 +755,7 @@ ol li::before {
         height: 35px;
         top: 27%;
         left: 0;
-        background-image: url("/img/buttons/prev-mobile.svg");
+        background-image: url("./img/buttons/prev-mobile.svg");
         background-repeat: no-repeat;
     }
     .next{
@@ -765,7 +764,7 @@ ol li::before {
         height: 35px;
         top: 27%;
         right: 0;
-        background-image: url("/img/buttons/next-mobile.svg");
+        background-image: url("./img/buttons/next-mobile.svg");
         background-repeat: no-repeat;
     }
     .footer{
