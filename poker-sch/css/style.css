@@ -17,7 +17,6 @@ a{
     width: 1280px;
     margin: 0 auto;
     z-index: 0;
-    overflow: hidden;
 }
 button:hover{
     cursor: pointer;
@@ -573,6 +572,7 @@ ol li::before {
 @media (max-width: 479px){
     .container{
         width: 340px;
+        overflow: hidden;
     }
     .title{
         font-size: 22px;
