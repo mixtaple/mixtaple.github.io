@@ -12,6 +12,22 @@ document.querySelectorAll('.faq__title').forEach((i)=>{
     })
 });
 
+<<<<<<< HEAD
+=======
+document.querySelector('.hamburger').addEventListener('click', (e)=>{
+    document.querySelector('.header__menu').classList.toggle('opened');
+});
+
+document.querySelectorAll('.header__menu li').forEach((i)=>{
+    i.addEventListener('click', ()=>{
+        if (document.querySelector('.header__menu').classList.contains('opened') == true){
+            document.querySelector('.header__menu').classList.toggle('opened');
+        }
+    });
+
+});
+
+>>>>>>> 17886b1104988e0214556b4f169899ef2fc723e8
 // function validateWhiteListForm() {
 //     let wallet = document.forms["whiteListForm"]["wallet_id"].value;
 //     if (wallet === "") {

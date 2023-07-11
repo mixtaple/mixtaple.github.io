@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans';
+}
+
+.header{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.title{
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 40px;
+}
+
+.nav{
+    position: absolute;
+    width: 52px;
+    height: 100%;
+    background: #550DC9;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+.nav button{
+    background: #440BA0;
+    display: block;
+    border:none;
+    height: 32px;
+}
+button:hover{
+    cursor:pointer;
+}
+
+.container{
+    padding: 24px 24px 24px  76px;
+    display: flex;
+    align-items: flex-start;
+    width: 98vw;
+    gap: 65px;
+}
+.active{
+    width: 70vw;
+}
+
+.add{
+
+}
+.add__input{
+    width: 95%;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Open Sans';
+}
+.add__input::placeholder{
+    font-size: 14px;
+    line-height: 19px;
+    color: #CACACA;
+}
+.add__input:focus{
+    outline: none;
+}
+.add__button{
+    width: 51px;
+    height: 40px;
+    background: #550DC9;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    border:none;
+}
+
+
+.to-do{
+    margin-top: 16px;
+    width: 100%;
+}
+
+.item{
+    margin: 8px  0 16px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    border: none;
+}
+.item__title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #373737;
+}
+.item label{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 12px;
+}
+
+.item__descr{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.completed{
+    width: 35%;
+}
+.completed__title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #373737;
+}
+
+.completed .item{
+    margin: 8px  0 16px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    border: none;
+}
+.completed .item label{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 12px;
+}
+
+.completed .item__descr{
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: line-through;
+    color: #A3A3A3;
+}
+
+
+

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>SpinLead</title>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="header__logo"><img src="./icons/logo.svg" alt="ph-logo"><div class="header__logo__text">PH School</div></div>
+            <div class="header__title">Бесплатный курс по покеру Spin&Go/Flash</div>
+            <div class="header__title header__title__yellow">для начинающих от PokerHero</div>
+            <div class="header__side__man_mobile"><img src="./img/man-mobile.svg" alt="man"></div>
+            <div class="header__side__text">
+                Начни карьеру Poker Pro</br> и зарабатывай удаленно
+            </div>
+            <div class="header__descr"><span class="header__descr__add">Покер — интеллектуальная игра, где на дистанции самое важное это скилл и трудолюбие.</br></br></span>
+                Наши лучшие ученики зарабатывают более
+                <span class="money5000"><img src="/img/round.svg" alt="" class="round">5000$</span>
+                в месяц, 
+             a средний заработок среди более чем 100 учеников составляет
+             <span class="money800"><img src="/img/round.svg" alt="" class="round800">800$</span> в месяц. </div>
+             <button class="header__button long">Пройти курс</button>
+            <div class="header__side__man"><img src="./img/man.svg" alt="man"></div>
+            
+
+        </section>
+        <section class="towho">
+            <div class="towho__title title">Кому подойдёт</div>
+            <div class="towho__container">
+                <div class="towho__text">
+                    <p>Замотивированным <br class="mobile__breakers">ребятам, которые
+                        <br class="mobile__breakers">
+                        хотят научиться <br class="mobile__breakers"> зарабатывать <br class="mobile__breakers">удалённо</p>  
+                </div>
+                <div class="towho__text">
+                    <p>Кто хочет найти интересную подработку со свободным графиком</p>
+                </div>
+                <div class="towho__text">
+                    <p>Кто хочет найти<br class="mobile__breakers">
+                        подработку для своей основной покерной дисциплины (MMT/<br class="mobile__breakers">кэш регуляры)</p>
+                </div>
+                <div class="towho__text">
+                    <p>Игрокам с нулевым уровнем игры в покер</p>
+                </div>
+                <img src="./img/towho-bg1.svg" alt="" class="towho__bg">
+                <img src="./img/bg/towho-bg-mobile.svg" alt="" class="towho__bg_mobile">
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__title title">О школе</div>
+            <div class="about__wrapper">
+                <div class="about__container__left">
+                    <div class="about__descr">Мы — профессиональная покерная школа PokerHero и целое комьюнити единомышленников. </div>
+                    <img src="/img/photos.svg" alt="photos">
+                    <button class="about__button long">Наш discord</button>
+                </div>
+                <div class="about__cross">
+                    <div class="about__cross__elem">
+                        <div class="about__cross__elem_title">120+</div>
+                        <div class="about__cross__elem_descr"><p>учеников<br>в школе</p></div>
+                    </div>
+                    <div class="about__cross__elem">
+                        <div class="about__cross__elem_title">$260 000</div>
+                        <div class="about__cross__elem_descr"><p>заработали наши ученики за прошлый год</p></div>
+                    </div>
+                    <div class="about__cross__elem">
+                        <div class="about__cross__elem_title">3К+</div>
+                        <div class="about__cross__elem_descr"><p>пользователей в discord</p></div>
+                    </div>
+                    <div class="about__cross__elem">
+                        <div class="about__cross__elem_title">$700 000</div>
+                        <div class="about__cross__elem_descr"><p>заработали тренеры за первый год с открытия школы</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="coaches">
+            <div class="coaches__title title">Наши тренеры</div>
+            <div class="coaches__descr">Не просто учителя-теоретики,<br>
+                а активные игроки, которые<br>печатают деньги в покере
+            </div>
+            <img src="/img/line.svg" alt="line" class="line">
+
+            <button class="prev" id="coachesPrev"></button>
+            <button class="next" id="coachesNext"></button>
+            <div class="coaches__cards">
+                <div class="coaches__card hidden">
+                    <div class="coachess__card__img"></div>
+                    <div class="coachess__card__title">
+                        <div class="card__img"><img src="/img/coaches/gunpowder.svg" alt="Gunpowder"></div>
+                        <p>Maкс<br>Gunpowder</p>
+                    </div>
+                    <div class="coachess__card__descr">
+                        Мастер игры с любителями, в школе проводит обучающие стримы на которых раскрывает важнейшие аспекты эксплойтной игры.
+                    </div>
+                </div>
+                <div class="coaches__card coaches__card_sidecard">
+                    <div class="coachess__card__img"></div>
+                    <div class="coachess__card__title">
+                        <div class="card__img"><img src="/img/coaches/playerok.svg" alt="playerOK"></div>
+                        <p>Илья PlayerOK</p>
+                    </div>
+                    <div class="coachess__card__descr">
+                        Мастер флешей/нитро, проводит в школе теоретические занятия, рассказывая о тенденциях, стратегиях и фишках игры в коротких стеках. 
+                    </div>
+                </div>
+
+                <div class="coaches__card coaches__card_main">
+                    <div class="coachess__card__img"></div>
+                    <div class="coachess__card__title">
+                        <div class="card__img"><img src="/img/coaches/sawcrew.svg" alt="Sawcrew"></div>
+                        <p>Дима<br>Sawcrew</p>
+                    </div>
+                    <div class="coachess__card__descr">
+                        В своих лекциях простыми словами раскрывает важные подстройки и комплексные стратегии против всех типов оппонентов в глубоких и коротких стеках. 
+                    </div>
+                </div>
+
+                <div class="coaches__card coaches__card_sidecard">
+                    <div class="coachess__card__img"></div>
+                    <div class="coachess__card__title">
+                        <div class="card__img"><img src="/img/coaches/sorokabeloboka.svg" alt="Sorokabeloboka"></div>
+                        <p>Влад<br>Sorokabeloboka</p>
+                    </div>
+                    <div class="coachess__card__descr">
+                        Специалист по игре против сильных оппонентов, на своих практических занятиях разбирает игру учеников а также даёт ультимативные фишки и эксплойты против регов.
+                    </div>
+                </div>
+                <div class="coaches__card hidden">
+                    <div class="coachess__card__img"></div>
+                    <div class="coachess__card__title">
+                        <div class="card__img"><img src="/img/coaches/gunpowder.svg" alt="Gunpowder"></div>
+                        <p>Maкс<br>Gunpowder</p>
+                    </div>
+                    <div class="coachess__card__descr">
+                        Мастер игры с любителями, в школе проводит обучающие стримы на которых раскрывает важнейшие аспекты эксплойтной игры.
+                    </div>
+                </div>
+                <div class="coaches__card hidden">
+                    <div class="coachess__card__img"></div>
+                    <div class="coachess__card__title">
+                        <div class="card__img"><img src="/img/coaches/belyi.svg" alt="Belyi"></div>
+                        <p>Серега<br>Belyi</p>
+                    </div>
+                    <div class="coachess__card__descr">
+                        Топ гриндер нитро на Winamax, проводит обучающие стримы для игроков низких и средних лимитов.
+                    </div>
+                </div>
+                <div class="coaches__card hidden">
+                    <div class="coachess__card__img"></div>
+                    <div class="coachess__card__title">
+                        <div class="card__img"><img src="/img/coaches/svalse.svg" alt="Svalse"></div>
+                        <p>Саша<br>Svalse</p>
+                    </div>
+                    <div class="coachess__card__descr">
+                        Бывший ученик школы, ставший полноценным тренером. Проводит разборы баз для учеников а также практические занятия. 
+                    </div>
+                </div>
+                <div class="coaches__card hidden">
+                    <div class="coachess__card__img"></div>
+                    <div class="coachess__card__title">
+                        <div class="card__img"><img src="/img/coaches/dirtyflavor.svg" alt="DirtyFlavor"></div>
+                        <p>Вова<br>DirtyFlavor</p>
+                    </div>
+                    <div class="coachess__card__descr">
+                        Бывший ученик школы, ставший полноценным тренером. Проводит разборы баз для учеников а также практические занятия. 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <seaction class="learn">
+            <img src="/img/bg/plan-mobile.svg" alt="bg" class="learn__bg__mobile">
+            <div class="learn__title title">Чему вы научитесь</div>
+            <div class="learn__container">
+                <div class="learn__descr">Вы узнаете про основные прибыльные стратегии игры в нашей дисциплине,<br>
+                    которые позволят вам зарабатывать деньги уже начиная с первого турнира. У нас вы найдете как теоретические лекции, так и мощные тренажеры для эффективной отработки полученных знаний.</div>
+                <div class="learn__incl">
+                    <div class="learn__incl__title">
+                        Курс включает в себя
+                    </div>
+                    <ol>
+                        <li class="learn__incl__elem">
+                            <p><span>5</span> лекций с основами стратегии</p>
+                        </li>
+                        <li class="learn__incl__elem">
+                            <p><span>3</span> обучающих стрима</p>
+                        </li>
+                        <li class="learn__incl__elem">
+                            <p>доступ к тренажерам <a href="#" class="preflop"><br class="mobile__breakers">PreflopHero</a> и <a href="#" class="postflop">PostflopHero</a></p>
+                        </li>
+                    </ol>
+
+                </div>
+            </div>
+        </seaction>
+        <section class="review">
+            <div class="review__title title">Результаты и отзывы учеников основной школы</div>
+            <div class="review__container">
+                <div class="review__elem">                
+                    <div class="review__card">
+                        <span>Ник:</span> ALEX Mangust<br>
+                        <span>Дисциплина:</span> Flash<br>
+                        <span>Лимит:</span> 5<br>
+                        <span>Период:</span> 1 month<br>
+                        <span>Дистанция:</span> 10 000<br>
+                        <span>ChipEV:</span> 30
+                        </div>
+                    <div class="review__descr">Преподаватели PokerHero проявили высокий профессионализм и экспертизу, делая обучение интересным и доступным для меня. Они ясно объясняли правила и стратегии, поделились полезными советами и дали мне возможность практиковаться.
+                        Мне особенно понравилось, как в обучении использовались практические примеры, анализ реальных игровых ситуаций и обратная связь от преподавателей.
+                    </div>
+                </div>
+                <div class="review__elem review__elem_main">                
+                    <div class="review__card">
+                    <span>Ник:</span> Na_pereape<br>
+                    <span>Дисциплина:</span> Flash<br>
+                    <span>Лимит:</span> 5<br>
+                    <span>Период:</span> 1 month<br>
+                    <span>Дистанция:</span> 10 000<br>
+                    <span>ChipEV:</span> 30
+                    </div>
+                    <div class="review__descr">Преподаватели PokerHero проявили высокий профессионализм и экспертизу, делая обучение интересным и доступным для меня. Они ясно объясняли правила и стратегии, поделились полезными советами и дали мне возможность практиковаться.
+                        Мне особенно понравилось, как в обучении использовались практические примеры, анализ реальных игровых ситуаций и обратная связь от преподавателей.
+                    </div>
+                </div>
+                <div class="review__elem">                
+                    <div class="review__card">
+                        <span>Ник:</span> Denis Licvid<br>
+                        <span>Дисциплина:</span> Flash<br>
+                        <span>Лимит:</span> 5<br>
+                        <span>Период:</span> 1 month<br>
+                        <span>Дистанция:</span> 10 000<br>
+                        <span>ChipEV:</span> 30
+                        </div>
+                    <div class="review__descr">Преподаватели PokerHero проявили высокий профессионализм и экспертизу, делая обучение интересным и доступным для меня. Они ясно объясняли правила и стратегии, поделились полезными советами и дали мне возможность практиковаться.
+                        Мне особенно понравилось, как в обучении использовались практические примеры, анализ реальных игровых ситуаций и обратная связь от преподавателей.
+                    </div>
+                </div>
+            </div>
+            <div class="review__buttons">
+                <button class="prev" id="reviewPrev"></button>
+                <button class="next" id="reviewNext"></button>
+            </div>
+        </section>
+        <section class="rocket">
+            <div class="rocket__title title">Запусти свою покерную карьеру<br>с PokerHero</div>
+            <button class="long">Пройти курс</button>
+
+        </section>
+        <section class="footer">
+            <img class="footer__bg" src="/img/bg/footer.png" alt="">
+            <div class="footer__elem">
+                <div class="footer__elem__title">
+                    <img src="./icons/logo.svg" alt="logo" class="footer__elem__title__img">
+                    <div class="footer__elem__title__descr">PH School</div>
+                </div>
+                <a href="#" class="footer__elem__link">Terms of service</a>
+                <a href="#" class="footer__elem__link">Privacy Policy</a>
+            </div>
+            <div class="footer__elem">
+                <div class="footer__elem__title">
+                    <div class="footer__elem__title__descr">Tools</div>
+                </div>
+                <a href="#" class="footer__elem__link footer__elem__link_bold">
+                    <div class="footer__elem_img">
+                        <img src="/icons/footer/preflop.svg" alt="preflop">
+                    </div>
+                    PreflopHero
+                </a>
+                <a href="#" class="footer__elem__link footer__elem__link_bold">    
+                    <div class="footer__elem_img">
+                        <img src="/icons/footer/postflop.svg" alt="postflop">
+                    </div>       
+                    PostflopHero
+                </a>
+            </div>
+            <div class="footer__elem">
+                <div class="footer__elem__title">
+                    <div class="footer__elem__title__descr">Media</div>
+                </div>
+                <a href="#" class="footer__elem__link">
+                    <img src="/icons/footer/discord.svg" alt="ds" class="footer__elem_img">
+                    pokerhero
+                </a>
+                <a href="#" class="footer__elem__link">
+                    <img src="/icons/footer/yt.svg" alt="yt" class="footer__elem_img">
+                    pokerhero
+                </a>
+                <a href="#" class="footer__elem__link">
+                    <img src="/icons/footer/inst.svg" alt="inst" class="footer__elem_img">
+                    pokerheroclub
+                </a>
+            </div>
+            <div class="footer__elem">
+                <div class="footer__elem__title">
+                    <div class="footer__elem__title__descr">Contacts</div>
+                </div>
+                <a href="#" class="footer__elem__link">
+                    <img src="/icons/footer/skype.svg" alt="skype" class="footer__elem_img">
+                    pokerhero
+                </a>
+                <a href="#" class="footer__elem__link">
+                    <img src="/icons/footer/letter.svg" alt="letter" class="footer__elem_img">
+                    support@pokerhero.com
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
