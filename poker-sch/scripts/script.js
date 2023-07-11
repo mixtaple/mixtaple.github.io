@@ -2,7 +2,7 @@
     const buttonPrev = document.getElementById('reviewPrev');
     const buttonNext = document.getElementById('reviewNext');
     [buttonNext, buttonPrev].forEach(button =>{
-        button.addEventListener('click', changeSlide)
+        button.addEventListener('click', changeReviewSlide)
     })
     setSides();
     function setSides() {
@@ -25,7 +25,7 @@
             }
         }
     }
-    function changeSlide  (e) {
+    function changeReviewSlide  (e) {
         e.preventDefault();
         const currentReview = document.getElementsByClassName('review__elem_main');
         
@@ -44,29 +44,65 @@
     }
 
 
-    // const coachPrev = document.getElementById('coachesPrev');
-    // const coachNext = document.getElementById('coachesNext');
-    // [coachNext, coachPrev].forEach(button =>{
-    //     button.addEventListener('click', changeSlide)
-    // })
-    // function changeSlide  (e) {
-    //     const coaches = document.getElementsByClassName('coaches__card');
-    //     console.log(coaches)
-    //     if(e.target.id ==='coachesPrev'){
-    //         let i =0;
-    //         for(let coach in coaches){
-    //             coaches[+coach].classList.remove('coaches__card_main')
-    //             coaches[+coach].classList.add('coaches__card_sidecard')
-    //             coaches[+coach-1]?.classList.add('coaches__card_main')
-    //             coaches[+coach-1]?.classList.remove('coaches__card_sidecard')
-    //             coaches[+coach+1]?.classList.add('hidden')
-    //             coaches[+coach+1]?.classList.remove('coaches__card_sidecard')
-    //             coaches[+coach-2]?.classList.add('coaches__card_sidecard')
-    //             coaches[+coach-2]?.classList.remove('hidden')
-    //             i++;
-    //         }
-    //     }else if(e.target.id === 'coachesNext'){
+    const coachPrev = document.getElementById('coachesPrev');
+    const coachNext = document.getElementById('coachesNext');
+    [coachNext, coachPrev].forEach(button =>{
+        button.addEventListener('click', changeCoachSlide)
+    })
+    coachesSort();
+    function coachesSort(){
+        const coaches = document.getElementsByClassName('coaches__card');
 
-    //     }
+        let mainItem = null
+        for(let index in coaches){
+        let className = coaches[index].className;
+            if(className?.includes('coaches__card_main')){
+                mainItem = index;
+            }
+        }
+        for (let i in coaches){
+
+            if(i<mainItem){
+                coaches[i].classList?.add('coach_left')
+                if(mainItem-i === 1){
+                    coaches[i].classList?.add('coaches__card_sidecard')
+
+                }else{
+                    coaches[i].classList?.remove('coaches__card_sidecard')
+                }
+            } else if(i>mainItem){
+                coaches[i].classList?.add('coach_right')
+                if(i-mainItem === 1){
+                    coaches[i].classList?.add('coaches__card_sidecard')
+                } else {
+                    coaches[i].classList?.remove('coaches__card_sidecard')
+                }
+            }else {
+                coaches[i].classList?.remove('coach_left')
+                coaches[i].classList?.remove('coach_right')
+                coaches[i].classList?.remove('coaches__card_sidecard')
+            }
+        }
+    }
+    function changeCoachSlide  (e) {
+        e.preventDefault();
+        const currentCoach = document.getElementsByClassName('coaches__card_main');
+
+        let newActive = null;
+        let notEnd = true;
+        if(e.target.id ==='coachesPrev'){
+             newActive = currentCoach[0].previousElementSibling;
+             notEnd = currentCoach[0].previousElementSibling.className.includes('coaches__card');
+
+        }else if(e.target.id === 'coachesNext'){
+             newActive = currentCoach[0].nextElementSibling;
+             notEnd = currentCoach[0]?.nextElementSibling?.className.includes('coaches__card');
+        }
+
+        if(newActive && notEnd){                
+            currentCoach[0].classList.remove('coaches__card_main');       
+            newActive.classList.add('coaches__card_main');         
+        }
+        coachesSort();
         
-    // }
+    }
