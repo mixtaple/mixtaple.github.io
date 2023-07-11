@@ -17,6 +17,7 @@ a{
     width: 1280px;
     margin: 0 auto;
     z-index: 0;
+    overflow: hidden;
 }
 button:hover{
     cursor: pointer;
@@ -484,6 +485,9 @@ ol li::before {
     left:0;
     z-index: 1;
 }
+.footer__bg__mobile{
+    display: none;
+}
 .footer__elem{
     width: 25%;
     z-index: 2;
@@ -525,7 +529,6 @@ ol li::before {
 @media (max-width: 479px){
     .container{
         width: 340px;
-        /* overflow: hidden; */
     }
     .title{
         font-size: 22px;
@@ -767,7 +770,47 @@ ol li::before {
         background-image: url("../img/buttons/next-mobile.svg");
         background-repeat: no-repeat;
     }
+    .rocket{
+        background-image: url("../img/bg/rocket-mobile.png");
+        justify-content: flex-start;
+        height: 390px;
+        padding-top: 60px;
+    }
+    .rocket button{
+        width: 198px;
+        font-size: 18px;
+    }
+    .rocket__title{
+        text-align: left;
+    }
     .footer{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    .footer__bg{
         display: none;
     }
+    .footer__bg__mobile{
+        width: 100%;
+        position: absolute;
+        top:-215px;
+        left:0;
+        display: block;
+        width: 777px;
+        left:-310px;
+        top: -70px;
+        z-index: 1;
+    }
+    .footer__elem{
+        padding: 0;
+        gap: 15px;
+        width: 40%;
+    }
+    .footer__elem__title{
+        font-size: 13px;
+    }
+    .footer__elem__link{
+        font-size: 13px;
+    }
+    
 }

@@ -26,6 +26,7 @@
         }
     }
     function changeSlide  (e) {
+        e.preventDefault();
         const currentReview = document.getElementsByClassName('review__elem_main');
         
         let newActive = null;
