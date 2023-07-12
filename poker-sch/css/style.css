@@ -16,19 +16,14 @@ a{
     position: relative;
     width: 1280px;
     margin: 0 auto;
-    z-index: 0;
 }
 button:hover{
     cursor: pointer;
 }
 .header{
     margin-bottom: 110px;
-    position: relative;
-    padding-top: 220px;
-}
-.header__logo{
-    top:42px;
-    position: absolute;
+    padding-top: 42px;
+    width: 100%;
 }
 .header__logo img{
     display: block;
@@ -56,6 +51,7 @@ button:hover{
 .header__logo{
     display: flex;
     align-items: center;
+    margin-bottom: 146px;
 }
 
 .header__title__yellow{
@@ -71,8 +67,7 @@ button:hover{
 }
 .header__descr span{
     font-weight: 700;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 7px;
 }
 .money5000{
     position: relative;
@@ -104,7 +99,7 @@ button:hover{
     font-size: 20px;
     position: absolute;
     right: 20px;
-    top: 42px;
+    top: 12px;
     padding-top: 30px;
     text-align: center;
     background-image: url("../img/cloud.svg");
@@ -169,8 +164,14 @@ button:hover{
 }
 .towho__bg{
     position: absolute;
-    left: -37px;
+    left: -90px;
     top: -140px;
+    z-index: -2;
+}
+.towho__lines{
+    position: absolute;
+    left: -22px;
+    top: -100px;
     z-index: -1;
 }
 .towho__bg_mobile{
@@ -318,7 +319,6 @@ button:hover{
 
 .coaches__card_sidecard .coaches__card__descr{
     height: 70%;
-    /* background-color: #F6F5F2; */
     font-family: 'Roboto', sans-serif;
     line-height: 150%;
     font-size: 18px;
@@ -335,8 +335,9 @@ button:hover{
     font-size: 24px;
     gap:9px;
 }
-.coaches__card_sidecard .card__img{
-    width: 75px;
+.coaches__card_sidecard .card__img img{
+    width: 70px;
+    height: 70px;
 }
 .hidden{
     display: none;
@@ -349,19 +350,26 @@ button:hover{
     align-items: center;
 }
 
-
-
 .learn{
     display: block;
     height: 570px;
-    margin-top: 150px;
-    background-image: url("../img/bg/plan.svg");
-    padding: 60px 40px;
+    position: relative;
+    margin: 230px auto 0;
+    padding: 20px 40px;
+
+}
+.learn__bg{
+    position: absolute;
+    left: -90px;
+    top: -70px;
+    z-index: -1;
 }
 .learn__bg__mobile{
     display: none;
 }
 .learn__container{
+    margin: 0 auto;
+    width: 1280px;
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -426,6 +434,7 @@ ol li::before {
 .review{
     margin-top: 150px;
     position: relative;
+    overflow: hidden;
 }
 
 .review__elem{
@@ -489,24 +498,25 @@ ol li::before {
 .next{
     width: 50px;
     height: 50px;
-    background-image: url("../img/buttons/prev.svg");
+    background-image: url("../img/buttons/next.svg");
     border:none;
     background-color: #fff;
 }
 
 .rocket{
-    padding-top: 150px;
-    background-image: url("../img/bg/rocket.svg");
-    background-position: 0 50px;
-    background-repeat: no-repeat;
+
     height: 590px;
+
+    z-index: -1;
+}
+.rocket .container{
+    padding-top: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
     row-gap: 37px;
     position: relative;
-    z-index: -1;
 }
 .rocket__title{
     margin-top: 50px;
@@ -516,18 +526,39 @@ ol li::before {
 .rocket button{
     background-color: #fff;
 }
+.rocket__bg{
+    position: absolute;
+    left: -90px;
+    top: 20px;
+    z-index: -1;
+}
+.rocket__bg__mobile{
+    display: none;
+}
+
 .footer{
+    /* height:400px; */
+
+    position: relative;
+        padding-top: 50px;
+}
+.footer .container{
     position: relative;
     display: flex;
     padding-bottom: 50px;
+    justify-content: center;
+
 }
 .footer__bg{
-    width: 100%;
+    /* display: none; */
     position: absolute;
-    top:-215px;
-    left:0;
-    z-index: 1;
+    bottom: -140px;
+    /* left: 0; */
+    z-index: -1;
 }
+
+
+
 .footer__bg__mobile{
     display: none;
 }
@@ -578,12 +609,15 @@ ol li::before {
         font-size: 22px;
     }
     .header{
-        padding-top: 70px;
+        padding-top: 17px;
+    }
+    .header .container{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
     .header__logo{
+        margin-bottom: 35px;
         top:22px;
         left: 0;
     }
@@ -596,6 +630,7 @@ ol li::before {
         font-size: 16px;
     }
     .header__title{
+        margin-top: 34px;
         font-size: 24px;
     }
     .header__title__yellow{
@@ -614,7 +649,7 @@ ol li::before {
     .header__descr{
         width: 100%;
         font-size: 16px;
-        margin: 30px 0;
+        margin:  0 0 30px;
     }
     .header__descr__add{
         display: none;
@@ -637,16 +672,20 @@ ol li::before {
     .towho{
         position: relative;
         z-index: 23;
-        padding-top: 0px;
-        height: auto;
+        padding-top: 60px;
+        height: 662px;
+        overflow: hidden;
     }
     .towho__bg{
+        display: none;
+    }
+    .towho__lines{
         display: none;
     }
     .towho__bg_mobile{
         display: block;
         position: absolute;
-        top: -115px;
+        top: -100px;
         left:-185px;
         z-index: -1;
     }
@@ -674,8 +713,14 @@ ol li::before {
         top:100px;
         background-size: 150px; z-index: 3;
     }
+    .towho .container{
+        overflow:visible;
+    }
     .mobile__breakers{
         display: inline;
+    }
+    .about{
+        margin-top: 60px;
     }
     .about__wrapper{
         margin-top: 30px;
@@ -694,11 +739,11 @@ ol li::before {
     .about__container__left img{
         width: 327px;
         position: absolute;
-        top:400px
+        top: 380px
     }
     .about__button{
         position: absolute;
-        top:500px
+        top:460px
     }
     .about__cross{
         width: 100%;
@@ -721,7 +766,7 @@ ol li::before {
         font-size: 15px;
     }
     .coaches{
-        margin-top: 122px;
+        margin-top: 100px;
     }
     .coaches__cards{
         height: auto;
@@ -733,8 +778,10 @@ ol li::before {
     }
     .coaches__card__title{
         font-size: 17px;
+        justify-content: flex-start;
+        gap: 10px;
     }
-    .coaches__card .card__img{
+     .card__img img{
         width: 50px;
         height: 50px;
     }
@@ -766,15 +813,23 @@ ol li::before {
     }
 
     .learn{
+        overflow: hidden;
         position: relative;
-        padding: 60px 0;
+        padding: 60px 0 0;
         background:none;
-        margin-top: 130px;
+        margin-top: 40px;
+        height: 616px;
+    }
+    .learn__bg{
+        display: none;
+    }
+    .learn .container{
+        overflow: visible;
     }
     .learn__bg__mobile{
         display: block;
         position: absolute;
-        top: -22px;
+        top: -55px;
         left:-185px;
         z-index: -1;
     }
@@ -784,6 +839,7 @@ ol li::before {
         position: relative;
     }
     .learn__container{
+        width: 100%;
         margin-top: 30px;    
         position: relative;
     }
@@ -806,7 +862,7 @@ ol li::before {
     }
 
     .review{
-        margin-top: 70px;
+        margin-top: 60px;
     }
     .review__card{
         width: 250px;
@@ -850,10 +906,21 @@ ol li::before {
         background-repeat: no-repeat;
     }
     .rocket{
-        background-image: url("../img/bg/rocket-mobile.png");
+        background: none;
         justify-content: flex-start;
         height: 390px;
         padding-top: 60px;
+        overflow: hidden;
+    }
+    .rocket__bg{
+        display: none;
+    }
+    .rocket__bg__mobile{
+        display: block;
+        position: absolute;
+        top: 40px;
+        left:-75px;
+        z-index: -1;
     }
     .rocket button{
         width: 198px;
@@ -861,35 +928,47 @@ ol li::before {
     }
     .rocket__title{
         text-align: left;
+        width: 220px;
+        margin-bottom: 20px;
     }
     .footer{
+        height:332px;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+    .footer .container{
+        display: flex;
         flex-wrap: wrap;
-        row-gap: 10px   ;
+        row-gap: 6px;
+        padding-top: 30px;
+
     }
     .footer__bg{
         display: none;
     }
     .footer__bg__mobile{
-        width: 100%;
         position: absolute;
-        top:-215px;
-        left:0;
         display: block;
-        width: 777px;
-        left:-310px;
-        top: -70px;
-        z-index: 1;
+        left:-370px;
+        top: -100px;
+        z-index: 2;
+
     }
     .footer__elem{
         padding: 0;
-        gap: 15px;
+        gap: 7px;
         width: 40%;
+        align-content: flex-start;
     }
     .footer__elem__title{
         font-size: 13px;
+        height: 20px;
     }
     .footer__elem__link{
         font-size: 13px;
+    }
+    .footer__elem__title__img{
+        width: 20px;
     }
     
 }
