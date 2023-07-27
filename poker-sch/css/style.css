@@ -303,10 +303,10 @@ button:hover{
     position: absolute;
 }
 .prev{
-    left: 375px
+    left: 341px
 }
 .next{
-    right: 375px;
+    right: 345px;
 }
 .coaches__card_sidecard{
     position: absolute;
@@ -325,10 +325,10 @@ button:hover{
 
 }
 .coach_left{
-    left: 55px;
+    left: 0px;
 }
 .coach_right{
-    right: 55px;
+    right: 0px;
 }
 .coaches__card_sidecard .coaches__card__title{
     font-size: 24px;
@@ -502,6 +502,13 @@ ol li::before {
     background-color: #fff;
 }
 
+.prev__filled{
+    background-image: url("../img/buttons/prev-filled.svg");
+}
+.next__filled{
+    background-image: url("../img/buttons/next-filled.svg");
+}
+
 .rocket{
 
     height: 590px;
@@ -554,7 +561,7 @@ ol li::before {
 }
 .footer__bg_wr{
     position: absolute;
-    width: 1401px;
+    width: 1358px;
     overflow: hidden;
     top: -280px;
 

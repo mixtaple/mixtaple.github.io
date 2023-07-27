@@ -1,10 +1,11 @@
  
-    const buttonPrev = document.getElementById('reviewPrev');
-    const buttonNext = document.getElementById('reviewNext');
-    [buttonNext, buttonPrev].forEach(button =>{
+    const buttonPrevRev = document.getElementById('reviewPrev');
+    const buttonNextRev = document.getElementById('reviewNext');
+    [buttonNextRev, buttonPrevRev].forEach(button =>{
         button.addEventListener('click', changeReviewSlide)
     })
     setSides();
+
     function setSides() {
         const allReviews = document.getElementsByClassName('review__elem');
         let mainItem = null
@@ -41,9 +42,33 @@
             newActive.classList.add('review__elem_main');         
         }
         setSides();
+        reviewSort();
     }
+    reviewSort();
+    function reviewSort(){
+        const reviews = document.getElementsByClassName('review__elem');
 
+        let hasLeft = 0;
+        let hasRight = 0;
 
+        for (let i in reviews){
+            hasLeft += +reviews[i].className?.split(' ')?.includes('left')? 1:0;
+            hasRight += +reviews[i].className?.split(' ')?.includes('right')? 1:0;
+        }
+        if (!hasLeft){
+            buttonPrevRev.classList.remove('prev__filled')
+        } else if(!buttonPrevRev.className.includes('prev__filled')) {
+            buttonPrevRev.classList.add('prev__filled')
+        }
+
+        if(!hasRight){
+            buttonNextRev.classList.remove('next__filled')
+        }else if(!buttonNextRev.className.includes('next__filled')) {
+            buttonNextRev.classList.add('next__filled')
+        }   
+    }
+    const buttonPrev = document.getElementById('coachesPrev');
+    const buttonNext = document.getElementById('coachesNext');
     const coachPrev = document.getElementById('coachesPrev');
     const coachNext = document.getElementById('coachesNext');
     [coachNext, coachPrev].forEach(button =>{
@@ -60,6 +85,7 @@
                 mainItem = index;
             }
         }
+        let posititons =[];
         for (let i in coaches){
 
             if(i<mainItem){
@@ -82,7 +108,34 @@
                 coaches[i].classList?.remove('coach_right')
                 coaches[i].classList?.remove('coaches__card_sidecard')
             }
+
+            if(coaches[i].className?.includes('coach__left')){
+                posititons.push('left')
+            }
+            if(coaches[i].className?.includes('coach__right')){
+                posititons.push('right')
+            }
         }
+
+        let hasLeft = 0;
+        let hasRight = 0;
+
+        for (let i in coaches){
+            hasLeft += +coaches[i].className?.split(' ')?.includes('coach_left')? 1:0;
+            hasRight += +coaches[i].className?.split(' ')?.includes('coach_right')? 1:0;
+        }
+
+        if (!hasLeft){
+            buttonPrev.classList.remove('prev__filled')
+        } else if(!buttonPrev.className.includes('prev__filled')) {
+            buttonPrev.classList.add('prev__filled')
+        }
+
+        if(!hasRight){
+            buttonNext.classList.remove('next__filled')
+        }else if(!buttonNext.className.includes('next__filled')) {
+            buttonNext.classList.add('next__filled')
+        }   
     }
     function changeCoachSlide  (e) {
         e.preventDefault();
